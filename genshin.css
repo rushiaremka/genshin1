@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+*::-webkit-scrollbar{
+  width: 2px;
+}
+*::-webkit-scrollbar-track{
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb{
+  background: #555;
+  border-radius: 12px;
+}
+*::-webkit-scrollbar-thumb:hover{
+  background: #222;
+}
+*::-moz-scrollbar{
+  width: 2px;
+}
+*::-moz-scrollbar-track{
+  background: transparent;
+}
+*::-moz-scrollbar-thumb{
+  background: #555;
+  border-radius: 12px;
+}
+*::-moz-scrollbar-thumb:hover{
+  background: #222;
+}
+*::-ms-scrollbar{
+  width: 2px;
+}
+*::-ms-scrollbar-track{
+  background: transparent;
+}
+*::-ms-scrollbar-thumb{
+  background: #555;
+  border-radius: 12px;
+}
+*::-ms-scrollbar-thumb:hover{
+  background: #222;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #0e0e0e;
+  overflow: hidden;
+}
+
+.container1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0e0e0e;
+  overflow: hidden;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  margin-left: 0;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.container1 .bg1 #bag1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(1);
+  background-position: center;
+  animation: 20s bgimg1 linear;
+}
+.container1 .bg1 #bag2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-position: center;
+  width: 100%;
+  transform: scale(1);
+  animation: 20s bgimg2 linear;
+}
+.container1 .bg1 #bag3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-position: center;
+  transform: scale(1);
+  animation: 20s bgimg3 linear;
+}
+.container1 .bg1 #bag4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(1);
+  background-position: center;
+  animation: 20s bgimg4 linear;
+}
+.container1 .bg1 #bag5{
+  position: absolute;
+  top: 0;
+  background-position: center;
+  left: 0;
+  width: 100%;
+  transform: scale(1);
+  animation: 20s bgimg5 linear;
+}
+@keyframes bgimg1 {
+  from{
+    transform: scale(1.2);
+  } to{
+    transform: scale(1);
+  }
+}
+@keyframes bgimg2 {
+  from{
+    transform: scale(1.2);
+  } to{
+    transform: scale(1);
+  }
+}
+@keyframes bgimg3 {
+  from{
+    transform: scale(1.2);
+  } to{
+    transform: scale(1);
+  }
+}
+@keyframes bgimg4 {
+  from{
+    transform: scale(1.2);
+  } to{
+    transform: scale(1);
+  }
+}
+@keyframes bgimg5 {
+  from{
+    transform: scale(1.2);
+  } to{
+    transform: scale(1);
+  }
+}
+
+@keyframes con1{
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container1 .logo{
+  position: absolute;
+  top: -20px;
+  left: -50px;
+  width: 80px;
+  height: 80px;
+  padding: 0 20px;
+  margin: 0 0 0 20px;
+  box-sizing: border-box;
+}
+
+.container1 .logo h1{
+  white-space: nowrap;
+  margin: 30px 0 0 30px;
+  color: #80808094;
+  padding: 0;
+  backdrop-filter: blur(10px);
+}
+
+.container1 ul{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 ul li button{
+  padding: 10px;
+  margin: 20px 20px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: #0e0e002f;
+  border: 1px solid rgb(0, 191, 255);
+  border-radius: 4px;
+  color: white;
+  opacity: 0.7;
+}
+
+.container1 ul li button:hover{
+  color: #121212;
+  background: rgb(0, 191, 255);
+  opacity: 1;
+}
+
+.container1 .container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container1 .container2 .card{
+  position: absolute;
+  width: 320px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  margin: 8% auto 12% auto;
+  padding: 200px 20px;
+  box-sizing: border-box;
+  position: relative;
+  transition: opacity 1s linear;
+  transform: scale(1);
+  border-radius: 8px;
+  flex-shrink: 0;
+  animation: scale 2s ease-in;
+  display: none;
+}
+
+@keyframes scale{
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+}
+
+.container1 .container2 .card:before{
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  margin: 20px 10px;
+  padding: 10px 20px;
+  background: #fff;
+  box-sizing: border-box;
+  transform: skewY(30deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s ease-in-out;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.container1 .container2 .card:after{
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  margin: 20px 10px;
+  padding: 10px 20px;
+  background: #fff;
+  transform: skewY(30deg);
+  filter: blur(10px);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s ease-in-out;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.container1 .container2 .card:nth-child(2):before,
+.container1 .container2 .card:nth-child(2):after {
+  background: linear-gradient(white, rgb(0, 191, 255));
+}
+
+.container1 .container2 .card:nth-child(3):before,
+.container1 .container2 .card:nth-child(3):after {
+  background: linear-gradient(white, rgb(93, 0, 255));
+}
+
+.container1 .container2 .card:nth-child(4):before,
+.container1 .container2 .card:nth-child(4):after {
+  background: linear-gradient(white, rgb(247, 27, 181));
+}
+
+.container1 .container2 .card:nth-child(5):before,
+.container1 .container2 .card:nth-child(5):after {
+  background: linear-gradient(white, rgb(0, 8, 255));
+}
+
+.container1 .container2 .card:nth-child(6):before,
+.container1 .container2 .card:nth-child(6):after {
+  background: linear-gradient(white, #353BA7);
+}
+
+.container1 .container2 .card:nth-child(2):hover:before,
+.container1 .container2 .card:nth-child(2):hover:after {
+  transform: skewY(0);
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 90px);
+  transform: translateX(-60px);
+  opacity: 0.5;
+  transform: scale(1.5);
+}
+
+.container1 .container2 .card:nth-child(3):hover:before,
+.container1 .container2 .card:nth-child(3):hover:after {
+  transform: skewY(0);
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 90px);
+  transform: translateX(-60px);
+  opacity: 0.5;
+  transform: scale(1.5);
+}
+
+.container1 .container2 .card:nth-child(4):hover:before,
+.container1 .container2 .card:nth-child(4):hover:after {
+  transform: skewY(0);
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 90px);
+  transform: translateX(-60px);
+  opacity: 0.5;
+  transform: scale(1.5);
+}
+
+.container1 .container2 .card:nth-child(5):hover:before,
+.container1 .container2 .card:nth-child(5):hover:after {
+  transform: skewY(0);
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 90px);
+  transform: translateX(-60px);
+  opacity: 0.5;
+  transform: scale(1.5);
+}
+
+.container1 .container2 .card:nth-child(6):hover:before,
+.container1 .container2 .card:nth-child(6):hover:after {
+  transform: skewY(0);
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 90px);
+  transform: translateX(-60px);
+  opacity: 0.5;
+  transform: scale(1.5);
+}
+
+.scroll-left, .scroll-right{
+  border: none;
+  background: rgba(0,0,0,0.5);
+  cursor: default;
+  position: absolute;
+  font-size: 80px;
+  padding: 20px 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #808080;
+  opacity: 0.5;
+  margin-right: 0;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.scroll-left:hover, .scroll-right:hover{
+  box-shadow: 0 5px 15px #555;
+  color: rgb(90, 255, 255);
+  filter: drop-shadow(0px 2px 2px rgb(90, 255, 255),
+  0px 4px 4px rgb(90, 255, 255),
+  0px 8px 8px rgb(90, 255, 255),
+  0px 16px 16px rgb(90, 255, 255));
+}
+
+.scroll-left{
+  left: 100px;
+}
+
+.scroll-right{
+  right: 100px;
+}
+
+
+
+.container1 .card img{
+  width: 200px;
+  height: 400px;
+  z-index: 2;
+  box-sizing: border-box;
+  margin: 20px 10px;
+  padding: 10px 20px;
+  transform: skewY(30deg);
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(5px 5px 10px #121212);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container1 .card:hover img{
+  transform: skewY(0);
+  width: calc(100% - 90px);
+  transition: 0.5s;
+  transform: translateX(-15px);
+  transition: 0.5s ease-in-out;
+  transform: scale(1.5);
+}
+
+.container1 .container2 .card span{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: 0.5s;
+}
+
+.container1 .container2 .card span:before{
+  content: "";
+  width: 70%;
+  height: 120%;
+  background: rgba(255,255,255,0.1);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.container1 .container2 .card span:after{
+  content: "";
+  width: 70%;
+  height: 120%;
+  background: rgba(255,255,255,0.1);
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.container1 .container2 .card:hover span:before{
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,0.1);
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  opacity: 1;
+  animation: span 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.5s;
+}
+
+.container1 .container2 .card:hover span:after{
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,0.1);
+  position: absolute;
+  bottom: -5%;
+  right: 20%;
+  opacity: 1;
+  animation: span 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.5s;
+}
+
+@keyframes span {
+  0%,100%{
+    transform: translateY(-10px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+}
+
+.container1 .container2 .card .p{
+  color: white;
+  z-index: 50;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 100%;
+  height: auto;
+  background: rgba(255,255,255,0.1);
+  box-shadow: rgba(0,0,0,0.05);
+  border-radius: 4%;
+  padding: 5%;
+  transform: skewY(30deg);
+  cursor: default;
+  opacity: 0;
+  backdrop-filter: blur(10px);
+}
+
+.container1 .container2 .card .p:hover{
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes p{
+  0%, 12%{
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+}
+
+.container1 .container2 .card:hover .p{
+  transform: skewY(0);
+  opacity: 1;
+  width: calc(100% - 90px);
+  transform: translateY(30px);
+  animation: 2s p ease-in-out;
+}
+
+@keyframes title{
+  0%{
+    opacity: 0;
+  }
+  12%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+}
+
+.container1 .container2 .card .title.t1{
+  position: absolute;
+  font-size: 70px;
+  top: -15%;
+  left: -10%;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-top: 0;
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+  transform: scale(1);
+  border-radius: 8px;
+  flex-shrink: 0;
+  opacity: 0;
+  text-align: left;
+  color: rgb(0, 191, 255);
+  text-shadow: 0 10px 10px #0e0e0e;
+  line-height: 1;
+  flex-wrap: wrap;
+  cursor: default;
+}
+
+.container1 .container2 .card:hover .title.t1 {
+  transform: skewY(0) translateX(-60px) scale(1.5);
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 60px);
+  opacity: 1;
+  z-index: 1;
+  filter: blur(0.5px);
+  animation: title 2s ease-in-out;
+}
+
+.container1 .container2 .card .title.t2{
+  position: absolute;
+  font-size: 80px;
+  top: -15%;
+  left: -2%;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-top: 1%;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scale(1);
+  border-radius: 8px;
+  flex-shrink: 0;
+  color: rgb(93, 0, 255);
+  text-shadow: 0 10px 10px #0e0e0e;
+  opacity: 0;
+  line-height: 1;
+  cursor: default;
+}
+
+.container1 .container2 .card:hover .title.t2{
+  transform: skewY(0) translateX(-60px) scale(1.5);
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 60px);
+  opacity: 1;
+  z-index: 1;
+  filter: blur(0.5px);
+  animation: title 2s ease-in-out;
+}
+
+.container1 .container2 .card .title.t3{
+  position: absolute;
+  font-size: 100px;
+  top: -20%;
+  left: -2%;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-top: 1%;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scale(1);
+  border-radius: 8px;
+  flex-shrink: 0;
+  color: rgb(247, 27, 181);
+  text-shadow: 0 10px 10px #0e0e0e;
+  opacity: 0;
+  line-height: 1;
+  cursor: default;
+}
+
+.container1 .container2 .card:hover .title.t3{
+  transform: skewY(0) translateX(-60px) scale(1.5);
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 60px);
+  opacity: 1;
+  z-index: 1;
+  filter: blur(0.5px);
+  animation: title 2s ease-in-out;
+}
+
+.container1 .container2 .card .title.t4{
+  position: absolute;
+  font-size: 80px;
+  top: -15%;
+  left: -10%;
+  width: 50%;
+  height: auto;
+  margin: 0;
+  padding-top: 1%;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scale(1);
+  border-radius: 8px;
+  flex-shrink: 0;
+  color: rgb(0, 8, 255);
+  text-shadow: 0 10px 10px #0e0e0e;
+  opacity: 0;
+  line-height: 1;
+  cursor: default;
+}
+
+.container1 .container2 .card:hover .title.t4{
+  transform: skewY(0) translateX(-60px) scale(1.5);
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 60px);
+  opacity: 1;
+  z-index: 1;
+  filter: blur(0.5px);
+  animation: title 2s ease-in-out;
+}
+
+.container1 .container2 .card .title.t5{
+  position: absolute;
+  font-size: 80px;
+  top: -15%;
+  left: -5%;
+  width: 50%;
+  height: auto;
+  margin: 0;
+  padding-top: 1%;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scale(1);
+  border-radius: 8px;
+  flex-shrink: 0;
+  color: #353BA7;
+  text-shadow: 0 10px 10px #0e0e0e;
+  opacity: 0;
+  line-height: 1;
+  cursor: default;
+}
+
+.container1 .container2 .card:hover .title.t5{
+  transform: skewY(0) translateX(-60px) scale(1.5);
+  transition: 0.5s ease-in-out;
+  width: calc(100% - 60px);
+  opacity: 1;
+  z-index: 1;
+  filter: blur(0.5px);
+  animation: title 2s ease-in-out;
+}
+
+.container1 .container2 .card a{
+  z-index: 4;
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: -20%;
+  right: 14%;
+  text-decoration: none;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5%;
+  padding: 3%;
+  color: #0e0e0e;
+  transition: 0.5s;
+  transform: scale(2);
+  opacity: 0;
+  z-index: 51;
+  backdrop-filter: blur(10px);
+  white-space: nowrap;
+}
+
+.container1 .container2 .card a:hover{
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container1 .container2 .card:hover a{
+  opacity: 1;
+  transform: scale(1);
+  width: calc(100% - 221px);
+}
+
+@media(max-width: 768px){
+  .container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .scroll-left{
+    left: 0;
+  }
+  
+  .scroll-right{
+    right: 0;
+  }
+
+  .container1 .container2 .card{
+    transform: scale(0.5);
+    animation: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+  }
+
+  .container1 .container2 .card:hover{
+    transform: scale(0.5);
+  }
+
+  .container1 form input{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-shrink: 1 0 200px;
+  }
+  .container1 form {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-shrink: 1 0 200px;
+  }
+  .container1 .logo{
+    display: none;
+  }
+}

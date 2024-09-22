@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+*::-webkit-scrollbar{
+  width: 2px;
+}
+*::-webkit-scrollbar-track{
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb{
+  background: #555;
+  border-radius: 12px;
+}
+*::-webkit-scrollbar-thumb:hover{
+  background: #222;
+}
+*::-moz-scrollbar{
+  width: 2px;
+}
+*::-moz-scrollbar-track{
+  background: transparent;
+}
+*::-moz-scrollbar-thumb{
+  background: #555;
+  border-radius: 12px;
+}
+*::-moz-scrollbar-thumb:hover{
+  background: #222;
+}
+*::-ms-scrollbar{
+  width: 2px;
+}
+*::-ms-scrollbar-track{
+  background: transparent;
+}
+*::-ms-scrollbar-thumb{
+  background: #555;
+  border-radius: 12px;
+}
+*::-ms-scrollbar-thumb:hover{
+  background: #222;
+}
+
+:root{
+  --navy: #000080;
+  --midnightblue: #191980;
+  --darkabu:#2F4F4F;
+  --abuarang: #36454F;
+  --ebony: #555D50;
+  --raven: #2C3539;
+  --onyx: #353839;
+  --deep-purple: #301934;
+  --imperial-blue: #002366;
+  --teal: #008080;
+  --burgundy: #800020;
+  --coral: #FF7F50;
+  --dark-olive-green: #556B2F;
+  --midnight-green:#004953;
+  --gunmetal: #2C3539;
+  --chocolate-brown: #3D2B1F;
+  --maroon: #800000;
+  --jetblack: #343434;
+  --darkslategray: #2F4F4F;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--abuarang);
+  transition: 0.5s;
+  margin: 0;
+  padding: 0 6%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  font-size: 1.5vw;
+}
+
+.container .h1{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  color: #f0f0f0;
+  padding: 50px 20px;
+  cursor: default;
+}
+
+.container .backstorycontainer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 4px;
+  transition: 0.7s;
+}
+
+.container .backstorycontainer .backstory{
+  position: relative;
+  left: 0px;
+  width: 20%;
+  border-radius: 8px;
+  padding: 8px;
+  height: auto;
+  transition: 0.5s cubic-bezier(1,0,.98,.25);
+  flex: 1px;
+  color: #f0f0f0;
+  background: var(--darkabu);
+  box-shadow: 0 5px 20px black;
+  padding: 20px;
+  cursor: default;
+}
+
+.container .backstorycontainer .backstory:hover{
+  flex: 3;
+  cursor: pointer;
+  background: var(--teal);
+  height: 100%;
+  min-height: 1500px;
+}
+
+.container .backstorycontainer .backstory h3{
+  margin-bottom: 20px;
+}
+
+.container h2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 100px 20px 50px 0;
+  color: #f0f0f0;
+  cursor: default;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid rgb(6, 57, 74);
+  position: relative;
+  flex-wrap: nowrap;
+  transition: 0.5s ease-in-out;
+  white-space: nowrap;
+}
+
+.container h2:hover{
+  border-bottom: 2px solid rgb(0, 191, 255);
+}
+
+.container .cont0 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.container .cont0 .tab1 {
+  color: #f0f0f0;
+  border-collapse: collapse;
+  box-shadow: 0 5px 20px black;
+  border-radius: 5%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-grow: 1;
+  flex-basis: 200;
+  width: 100%;
+  border: 3px solid transparent;
+  font-size: 1.5vw;
+  background: var(--darkabu);
+}
+
+.container .cont0 .tab1 tr th, .container .cont0 .tab1 tr td {
+  color: inherit;
+  border: 2px solid var(--raven);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-bottom: none;
+  border-right: none;
+}
+
+.container .cont0 .tab1 tr th {
+  border-top: none;
+  border-left: none;
+}
+
+.container .tab1 tr td{
+  width: 30%;
+}
+
+.container .cont0 .tab1 tr td img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.container .con0 .tab1 tr .img{
+  width: 20%;
+  height: auto;
+  border-left: none !important;
+}
+ /*-------------------------------------------------------------------------*/
+.container .cont{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  transition: 0.5s;
+  padding: 5px;
+  margin: 0;
+  box-sizing: border-box;
+  background: var(--darkabu);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px black;
+  border-radius: 0 0 100px 100px;
+}
+
+.container .tab2{
+  color: #f0f0f0;
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+  border-spacing: 0;
+  margin: 0;
+}
+
+.container .tab2 tr th{
+  border-bottom: 2px solid var(--raven);
+}
+
+.container .tab2 tr th, .container .tab2 tr td{
+  width: 25%;
+  height: auto;
+  color: inherit;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+
+/*-----------------------------------------------------------------------------*/
+.container .stats{
+  width: 100%;
+  height: auto;
+  background: var(--darkabu);
+  padding: 50px 20px 20px 20px;
+  border-radius: 20px;
+  margin: 0 0 50px 0;
+  box-shadow: 0 5px 20px black;
+  transition: 0.5s ease-in-out;
+}
+
+.container .stats .tab{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.container .stats .tab .tablink{
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: rgb(188, 238, 255, 0.1);
+  border-radius: 8px;
+  border: none;
+  transition: 0.5s ease-out;
+  font-size: 2vw;
+}
+
+.container .stats .tab .tablink:nth-child(1){
+  margin-left: 20px;
+  border-radius: 10px 10px 10px 70px;
+}
+
+.container .stats .tab .tablink:nth-child(2){
+  margin-right: 20px;
+  border-radius: 10px 10px 70px 10px;
+}
+
+.container .tab .tablink:hover{
+  background: rgb(188, 238, 255, 0.3);
+  cursor: pointer;
+}
+
+.container .stats .tab .tablink.active{
+  background: rgb(188, 238, 255);
+  cursor: default;
+  transition: 0.1s ease-in-out;
+  transform: scale(1.02);
+}
+
+.container .stats .tab .tablink.active:nth-child(1){
+  border-radius: 10px 20px 20px 70px;
+}
+
+.container .stats .tab .tablink.active:nth-child(2){
+  border-radius: 20px 10px 70px 20px;
+}
+
+.container .stats #stats90{
+  display: none;
+}
+
+.container .stats .tabcontent{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.container .stats .tabcontent table {
+  width: 100%;
+  height: auto;
+  color: #f0f0f0;
+  background: var(--abuarang);
+  border-collapse: collapse;
+  box-shadow: 0 5px 20px black;
+  transition: 0.5s;
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+
+.container .stats .tabcontent table tr th:nth-child(1){
+  border-radius: 20px 0 0 0;
+  background: var(--abuarang);
+}
+.container .stats .tabcontent table tr th:nth-child(2){
+  border-radius: 0 20px 0 0;
+  background: var(--abuarang);
+}
+
+.container .stats .tabcontent table tr td, .container .stats .tabcontent table tr th{
+  border: 1px solid var(--raven);
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container .stats .tabcontent table tr td .bar{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container .stats .tabcontent table tr td .bar .innerbar{
+  background: rgb(0, 191, 255);
+  border-radius: 20px;
+  color: #0e0e0e;
+  transition: 0.5ss ease-out;
+}
+
+@keyframes innerbar161{
+  0% {
+    width: 72%;
+  }
+  100%{
+    width: 16%;
+  }
+}
+@keyframes innerbar162{
+  0% {
+    width: 81%;
+  }
+  100%{
+    width: 16%;
+  }
+}
+@keyframes innerbar19{
+  0%{
+    width: 97%;
+  }
+  100%{
+    width: 19%;
+  }
+}
+
+@keyframes innerbar50{
+  0%{
+    width: 88.4%;
+  }
+  100%{
+    width: 50%;
+  }
+}
+@keyframes innerbar72{
+  0%{
+    width: 16%;
+  }
+  100%{
+    width: 72%;
+  }
+}
+@keyframes innerbar97{
+  0%{
+    width: 19%;
+  }
+  100%{
+    width: 97%;
+  }
+}
+@keyframes innerbar81{
+  0%{
+    width: 16%;
+  }
+  100%{
+    width: 81%;
+  }
+}
+@keyframes innerbar88{
+  0%{
+    width: 50%;
+  }
+  100%{
+    width: 88.4%;
+  }
+}
+
+/*-----------------------------------------------------------------------*/
+
+.container .material{
+  background: var(--darkabu);
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px black;
+  display: flex;
+  gap: 20px;
+}
+
+.container .material h4{
+  color: #f0f0f0;
+  margin: 0 0 20px 0;
+  font-size: larger;
+  cursor: default;
+}
+
+.container .material .ascendcontainer {
+  width: 100%;
+  height: auto;
+  padding: 3%;
+  border-radius: 20px;
+  margin: 20px 0;
+  flex: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.container .material .ascendcontainer:hover{
+  box-shadow: 25px 5px 20px black;
+  flex: 3;
+}
+
+.container .material .ascendcontainer .ascendcont{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .material .ascendcontainer .ascendcont .item{
+  flex-grow: 1;
+  flex-basis: 0;
+  border: 1px solid var(--darkslategray);
+  border-radius: 5px;
+  border-collapse: collapse;
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.container .material .ascendcontainer .ascendcont .item:hover{
+  border: 1px solid var(--teal);
+}
+
+.container .material .ascendcontainer .ascendcont .item .amount{
+  width: 100%;
+  height: auto;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .material .ascendcontainer .ascendcont .item label{
+  color: #f0f0f0;
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------------------*/
+.container .material .talentcontainer {
+  width: 100%;
+  height: auto;
+  padding: 3%;
+  border-radius: 20px;
+  margin: 20px 0;
+  flex: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.container .material .talentcontainer:hover{
+  box-shadow: -25px 5px 20px black;
+  flex: 3;
+}
+
+.container .material .talentcontainer .talentcont{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .material .talentcontainer .talentcont .item{
+  flex-grow: 1;
+  flex-basis: 0;
+  border: 1px solid var(--darkslategray);
+  border-radius: 5px;
+  border-collapse: collapse;
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.container .material .talentcontainer .talentcont .item:hover{
+  border: 1px solid var(--teal);
+}
+
+.container .material .talentcontainer .talentcont .item .amount{
+  width: 100%;
+  height: auto;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .material .talentcontainer .talentcont .item label{
+  color: #f0f0f0;
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.container .wpwp{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  position: relative;
+}
+
+.container .wpwp .weapon{
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 5%;
+  border-radius: 20% 0 0 20%;
+  background: radial-gradient(var(--darkslategray), var(--abuarang));
+  box-sizing: border-box;
+}
+
+.container .wpwp .weapon .wp{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .wpwp .weapon .wp h4{
+  font-size: 2vw !important;
+}
+
+.container .wpwp .weapon .wp img{
+  animation: 25s rotate infinite linear;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0 5px 15px black);
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  25% {
+    transform: rotateX(30deg) rotateY(60deg) rotateZ(15deg);
+  }
+  50% {
+    transform: rotateX(-30deg) rotateY(120deg) rotateZ(-15deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
+  }
+}
+
+.container .wpwp .weapon .wp label{
+  color: #f0f0f0;
+  font-size: 2vw;
+  cursor: default;
+  width: 100%;
+  height: auto;
+  text-shadow: 0 5px 10px rgb(0, 0, 0);
+  text-align: center;
+  margin: 0 10%;
+}
+
+.container .wpwp .weapon .wp h4{
+  color: #f0f0f0;
+  margin: 0 0 20px 0;
+  font-size: xx-large;
+  cursor: default;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.container .wpwp .weapon button{
+  padding: 20px 10px;
+  font-size: 5vw;
+  background: var(--gunmetal);
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.container .wpwp .weapon .left {
+  position: absolute;
+  left: 0;
+  bottom: 45%;
+  margin-left: 5%;
+}
+
+.container .wpwp .weapon .right {
+  position: absolute;
+  right: 0;
+  bottom: 45%;
+  margin-right: 5%;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+.container .wpwp .weaponcontent{
+  width: 50%;
+  height: 100vh;
+  background-image: linear-gradient(to right, var(--darkabu), var(--abuarang));
+  box-shadow: -20px -5px 20px black;
+  z-index: 2;
+  transition: 0.5s;
+  border-radius: 120px 10px 10px 120px;
+  padding: 1%;
+  cursor: default;
+  overflow-y: auto;
+}
+
+.container .wpwp .weaponcontent .wpcontent{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.container .wpwp .weaponcontent .wpcontent table {
+  border-collapse: collapse;
+  color: #f0f0f0;
+  width: 100%;
+  border: 8px solid transparent;
+  flex-grow: 1;
+  flex-basis: 200;
+}
+
+.container .wpwp .weaponcontent .wpcontent table tr th, .container .wpwp .weaponcontent .wpcontent table td{
+  border: 1px solid var(--raven);
+  text-align: center;
+  padding: 10px;
+}
+
+.container .wpwp .weaponcontent .wp table tr th{
+  white-space: nowrap;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------*/
+
+.container .artefakcontainer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container .artefakcontainer .arterank {
+  width: 50%;
+  height: auto;
+  transition: 0.5s;
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--darkabu);
+  border-radius: 10% 2% 2% 10%;
+  overflow: hidden;
+}
+
+.container .artefakcontainer .arterank table{
+  border-collapse: collapse;
+  color: #f0f0f0;
+  border: 10px solid transparent;
+  box-shadow: -5px -5px 20px black;
+  cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10% 2% 2% 10%;
+}
+
+.container .artefakcontainer .arterank table tr .arteimg{
+  flex-grow: 1;
+  flex-basis: 200;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.container .artefakcontainer .arterank table tr .arteimg img{
+  width: 40%;
+  flex-grow: 1;
+  flex-basis: 200;
+  margin-left: 25%;
+}
+
+.container .artefakcontainer .arterank table tr th, .container .artefakcontainer .arterank table tr td{
+  border-bottom: 2px solid var(--raven);
+  padding: 20px;
+  flex-grow: 1;
+  flex-basis: 200;
+}
+
+.container .artefakcontainer .arterank table tr th:hover, .container .artefakcontainer .arterank table tr td:hover, .container .artefakcontainer .arterank table tr .arteimg:hover{
+  text-shadow: 0 5px 15px black;
+  transform: translateY(-0.5rem) scale(1.1);
+}
+
+.container .artefakcontainer .artestats{
+  width: 50%;
+  height: auto;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .artefakcontainer .artestats table{
+  color: #f0f0f0;
+  flex-grow: 1;
+  flex-basis: 200;
+  background: var(--abuarang);
+  border-radius: 20px;
+}
+.container .artefakcontainer .artestats table tr th, .container .artefakcontainer .artestats table tr td{
+  border-bottom: 1px solid var(--teal);
+  text-align: center;
+  padding: 6.34% 0;
+}
+
+.container .artefakcontainer .artestats table tr th:hover, .container .artefakcontainer .artestats table tr td:hover{
+  box-shadow: 0 5px 15px black;
+  transform: scale(1.2);
+  z-index: 5;
+  background: teal;
+  border-color: teal;
+  border-radius: 20px;
+}
